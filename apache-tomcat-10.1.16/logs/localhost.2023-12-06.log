@@ -1,0 +1,696 @@
+06-Dec-2023 03:17:41.434 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [4] 행에서 오류가 발생했습니다.
+response cannot be resolved
+1: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+2: <%@ page import="java.util.*,java.text.*"%>
+3: 
+4: <%! PrintWriter out = response.getWriter(); %>
+5: 
+6: <%
+7: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [4] 행에서 오류가 발생했습니다.
+response cannot be resolved
+1: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+2: <%@ page import="java.util.*,java.text.*"%>
+3: 
+4: <%! PrintWriter out = response.getWriter(); %>
+5: 
+6: <%
+7: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Dec-2023 03:18:49.401 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [28] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from PrintWriter to JspWriter
+25: PreparedStatement pstmt = null;
+26: 
+27: try {
+28:     out = response.getWriter(); // 이 부분을 추가
+29: 
+30:     /***************
+31:     * DB 연결 부분(conn_db.jsp에서 역할을 대신 하기때문에 주석처리) *
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [28] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from PrintWriter to JspWriter
+25: PreparedStatement pstmt = null;
+26: 
+27: try {
+28:     out = response.getWriter(); // 이 부분을 추가
+29: 
+30:     /***************
+31:     * DB 연결 부분(conn_db.jsp에서 역할을 대신 하기때문에 주석처리) *
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Dec-2023 03:19:48.675 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [28] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from PrintWriter to JspWriter
+25: PreparedStatement pstmt = null;
+26: 
+27: try {
+28:     out = response.getWriter(); // 이 부분을 수정
+29: 
+30:     /***************
+31:     * DB 연결 부분(conn_db.jsp에서 역할을 대신 하기때문에 주석처리) *
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [28] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from PrintWriter to JspWriter
+25: PreparedStatement pstmt = null;
+26: 
+27: try {
+28:     out = response.getWriter(); // 이 부분을 수정
+29: 
+30:     /***************
+31:     * DB 연결 부분(conn_db.jsp에서 역할을 대신 하기때문에 주석처리) *
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Dec-2023 03:25:24.726 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+page cannot be resolved to a type
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "language", VariableDeclaratorId expected after this token
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+language cannot be resolved to a type
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "import", delete this token
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+contentType cannot be resolved to a variable
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [45] 행에서 오류가 발생했습니다.
+Duplicate local variable s_name
+42: * 입력값 넘겨받기 *
+43: ******************/
+44: 
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+
+
+JSP 파일 [/insert.jsp]의 [46] 행에서 오류가 발생했습니다.
+Duplicate local variable s_password
+43: ******************/
+44: 
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+
+
+JSP 파일 [/insert.jsp]의 [47] 행에서 오류가 발생했습니다.
+Duplicate local variable s_email
+44: 
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+
+
+JSP 파일 [/insert.jsp]의 [48] 행에서 오류가 발생했습니다.
+Duplicate local variable s_homepage
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+
+
+JSP 파일 [/insert.jsp]의 [49] 행에서 오류가 발생했습니다.
+Duplicate local variable s_subject
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+
+
+JSP 파일 [/insert.jsp]의 [50] 행에서 오류가 발생했습니다.
+Duplicate local variable s_memo
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+
+
+JSP 파일 [/insert.jsp]의 [51] 행에서 오류가 발생했습니다.
+Duplicate local variable s_ip
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+
+
+JSP 파일 [/insert.jsp]의 [53] 행에서 오류가 발생했습니다.
+Duplicate local variable DB_URL
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+
+
+JSP 파일 [/insert.jsp]의 [54] 행에서 오류가 발생했습니다.
+Duplicate local variable DB_USER
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+
+
+JSP 파일 [/insert.jsp]의 [55] 행에서 오류가 발생했습니다.
+Duplicate local variable DB_PASSWORD
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+58: PreparedStatement pstmt = null;
+
+
+JSP 파일 [/insert.jsp]의 [57] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+58: PreparedStatement pstmt = null;
+59: 
+60: try {
+
+
+JSP 파일 [/insert.jsp]의 [58] 행에서 오류가 발생했습니다.
+Duplicate local variable pstmt
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+58: PreparedStatement pstmt = null;
+59: 
+60: try {
+61:     /***************
+
+
+코드 생성된 자바 파일 [D:\JSP\apache-tomcat-10.1.16\work\Catalina\localhost\ROOT\org\apache\jsp\insert_jsp.java]의 [301] 행에서 오류가 발생했습니다.
+Syntax error, insert "Finally" to complete TryStatement
+
+코드 생성된 자바 파일 [D:\JSP\apache-tomcat-10.1.16\work\Catalina\localhost\ROOT\org\apache\jsp\insert_jsp.java]의 [302] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+page cannot be resolved to a type
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "language", VariableDeclaratorId expected after this token
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+language cannot be resolved to a type
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "import", delete this token
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+contentType cannot be resolved to a variable
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+33:     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
+34:     ***********************************************/
+35: 
+36: <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=utf-8" %>
+37: <%@ page import="java.util.*,java.text.*"%>
+38: 
+39: <%
+
+
+JSP 파일 [/insert.jsp]의 [45] 행에서 오류가 발생했습니다.
+Duplicate local variable s_name
+42: * 입력값 넘겨받기 *
+43: ******************/
+44: 
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+
+
+JSP 파일 [/insert.jsp]의 [46] 행에서 오류가 발생했습니다.
+Duplicate local variable s_password
+43: ******************/
+44: 
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+
+
+JSP 파일 [/insert.jsp]의 [47] 행에서 오류가 발생했습니다.
+Duplicate local variable s_email
+44: 
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+
+
+JSP 파일 [/insert.jsp]의 [48] 행에서 오류가 발생했습니다.
+Duplicate local variable s_homepage
+45: String s_name = new String(request.getParameter("name").getBytes("8859_1"), "utf-8");
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+
+
+JSP 파일 [/insert.jsp]의 [49] 행에서 오류가 발생했습니다.
+Duplicate local variable s_subject
+46: String s_password = request.getParameter("password");
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+
+
+JSP 파일 [/insert.jsp]의 [50] 행에서 오류가 발생했습니다.
+Duplicate local variable s_memo
+47: String s_email = request.getParameter("email");
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+
+
+JSP 파일 [/insert.jsp]의 [51] 행에서 오류가 발생했습니다.
+Duplicate local variable s_ip
+48: String s_homepage = request.getParameter("homepage");
+49: String s_subject = new String(request.getParameter("subject").getBytes("8859_1"), "utf-8");
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+
+
+JSP 파일 [/insert.jsp]의 [53] 행에서 오류가 발생했습니다.
+Duplicate local variable DB_URL
+50: String s_memo = new String(request.getParameter("memo").getBytes("8859_1"), "utf-8");
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+
+
+JSP 파일 [/insert.jsp]의 [54] 행에서 오류가 발생했습니다.
+Duplicate local variable DB_USER
+51: String s_ip = request.getRemoteAddr();
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+
+
+JSP 파일 [/insert.jsp]의 [55] 행에서 오류가 발생했습니다.
+Duplicate local variable DB_PASSWORD
+52: 
+53: String DB_URL = "jdbc:mysql://localhost:3306/itmembers?useSSL=false&serverTimezone=UTC";
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+58: PreparedStatement pstmt = null;
+
+
+JSP 파일 [/insert.jsp]의 [57] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+54: String DB_USER = "root";
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+58: PreparedStatement pstmt = null;
+59: 
+60: try {
+
+
+JSP 파일 [/insert.jsp]의 [58] 행에서 오류가 발생했습니다.
+Duplicate local variable pstmt
+55: String DB_PASSWORD = "root";
+56: 
+57: Connection conn = null;
+58: PreparedStatement pstmt = null;
+59: 
+60: try {
+61:     /***************
+
+
+코드 생성된 자바 파일 [D:\JSP\apache-tomcat-10.1.16\work\Catalina\localhost\ROOT\org\apache\jsp\insert_jsp.java]의 [301] 행에서 오류가 발생했습니다.
+Syntax error, insert "Finally" to complete TryStatement
+
+코드 생성된 자바 파일 [D:\JSP\apache-tomcat-10.1.16\work\Catalina\localhost\ROOT\org\apache\jsp\insert_jsp.java]의 [302] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
