@@ -1,5 +1,35 @@
 <%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.*,java.text.*"%>
+<%@ include file = "conn_db.jsp" %>
+
+<%
+
+try {
+    String str_sql = "select number,subject,name,writetime,count from bbs;";
+    stmt = conn.createStatement(str_sql);
+    stmt.setString(number, s_number);
+    stmt.setString(subject, s_subject);
+    stmt.setString(name, s_name);
+    stmt.setString(writetime, s_writetime);
+    stmt.setString(count, s_count);
+        stmt.executeUpdate();
+} catch (Exception e) {
+    e.printStackTrace();
+} finally {
+    try {
+        if (pstmt != null) {
+            pstmt.close();
+        }
+        if (conn != null) {
+            conn.close();
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+
+%>
+
 
 <!DOCTYPE html>
 <head>
@@ -26,19 +56,19 @@
         </tr>
         <tr>
             <td width="30">
-                <p align="center">1</p>
+                <p align="center">s_number</p>
             </td>
             <td width="490">
-                여기에 제목 들어감
+                s_title
             </td>
             <td width="60">
-                <p align="center">손병목</p>
+                <p align="center">s_name</p>
             </td>
             <td width="70">
-                <p align="center">2003/03/31</p>
+                <p align="center">s_writetime</p>
             </td>
             <td width="30">
-                <p align="center">5</p>
+                <p align="center">s_count</p>
             </td>
         </tr>
         <tr>

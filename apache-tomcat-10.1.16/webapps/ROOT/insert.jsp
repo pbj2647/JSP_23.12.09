@@ -29,8 +29,8 @@ try {
     /***************
     * DB 연결 부분(conn_db.jsp에서 역할을 대신 하기때문에 주석처리) *
     ***************/
-    Class.forName("com.mysql.cj.jdbc.Driver");
-    conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+    //Class.forName("com.mysql.cj.jdbc.Driver");
+    //conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
     /***********************************************
     * SQL문을 이용해 DB에 입력 값 저장(Insert)하기 *
