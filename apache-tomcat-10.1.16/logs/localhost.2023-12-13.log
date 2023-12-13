@@ -1,2 +1,2313 @@
 13-Dec-2023 00:37:53.301 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
 13-Dec-2023 00:37:53.301 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+13-Dec-2023 01:09:53.367 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+13-Dec-2023 01:09:53.367 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+13-Dec-2023 01:09:53.369 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4c2af006')
+13-Dec-2023 01:09:56.598 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 01:10:18.038 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 01:10:43.605 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 01:10:51.354 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 09:02:20.683 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+13-Dec-2023 09:02:20.683 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+13-Dec-2023 23:54:07.497 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+13-Dec-2023 23:54:07.497 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+13-Dec-2023 23:54:07.498 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@47c40b56')
+13-Dec-2023 23:54:42.381 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [31] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+28: try {
+29:    
+30:     String str_sql = "INSERT INTO bbs(name, password, email, homepage, subject, memo, ip, count, writetime) VALUES(?,?,?,?,?,?,?,?,UNIX_TIMESTAMP(CURRENT_TIMESTAMP))";
+31:     pstmt = conn.prepareStatement(str_sql);
+32:     pstmt.setString(1, s_name);
+33:     pstmt.setString(2, s_password);
+34:     pstmt.setString(3, s_email);
+
+
+JSP 파일 [/insert.jsp]의 [48] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+45:         if (pstmt != null) {
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+
+
+JSP 파일 [/insert.jsp]의 [49] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+52:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [31] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+28: try {
+29:    
+30:     String str_sql = "INSERT INTO bbs(name, password, email, homepage, subject, memo, ip, count, writetime) VALUES(?,?,?,?,?,?,?,?,UNIX_TIMESTAMP(CURRENT_TIMESTAMP))";
+31:     pstmt = conn.prepareStatement(str_sql);
+32:     pstmt.setString(1, s_name);
+33:     pstmt.setString(2, s_password);
+34:     pstmt.setString(3, s_email);
+
+
+JSP 파일 [/insert.jsp]의 [48] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+45:         if (pstmt != null) {
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+
+
+JSP 파일 [/insert.jsp]의 [49] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+52:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 23:54:42.382 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.insert_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.insert_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 23:54:52.275 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [31] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+28: try {
+29:    
+30:     String str_sql = "INSERT INTO bbs(name, password, email, homepage, subject, memo, ip, count, writetime) VALUES(?,?,?,?,?,?,?,?,UNIX_TIMESTAMP(CURRENT_TIMESTAMP))";
+31:     pstmt = conn.prepareStatement(str_sql);
+32:     pstmt.setString(1, s_name);
+33:     pstmt.setString(2, s_password);
+34:     pstmt.setString(3, s_email);
+
+
+JSP 파일 [/insert.jsp]의 [48] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+45:         if (pstmt != null) {
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+
+
+JSP 파일 [/insert.jsp]의 [49] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+52:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [31] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+28: try {
+29:    
+30:     String str_sql = "INSERT INTO bbs(name, password, email, homepage, subject, memo, ip, count, writetime) VALUES(?,?,?,?,?,?,?,?,UNIX_TIMESTAMP(CURRENT_TIMESTAMP))";
+31:     pstmt = conn.prepareStatement(str_sql);
+32:     pstmt.setString(1, s_name);
+33:     pstmt.setString(2, s_password);
+34:     pstmt.setString(3, s_email);
+
+
+JSP 파일 [/insert.jsp]의 [48] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+45:         if (pstmt != null) {
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+
+
+JSP 파일 [/insert.jsp]의 [49] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+46:             pstmt.close();
+47:         }
+48:         if (conn != null) {
+49:             conn.close();
+50:         }
+51:     } catch (SQLException e) {
+52:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 23:55:06.207 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [40] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+37:     ***********************************************/
+38: 
+39:     String str_sql = "INSERT INTO bbs(name, password, email, homepage, subject, memo, ip, count, writetime) VALUES(?,?,?,?,?,?,?,?,UNIX_TIMESTAMP(CURRENT_TIMESTAMP))";
+40:     pstmt = conn.prepareStatement(str_sql);
+41:     pstmt.setString(1, s_name);
+42:     pstmt.setString(2, s_password);
+43:     pstmt.setString(3, s_email);
+
+
+JSP 파일 [/insert.jsp]의 [57] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+54:         if (pstmt != null) {
+55:             pstmt.close();
+56:         }
+57:         if (conn != null) {
+58:             conn.close();
+59:         }
+60:     } catch (SQLException e) {
+
+
+JSP 파일 [/insert.jsp]의 [58] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+55:             pstmt.close();
+56:         }
+57:         if (conn != null) {
+58:             conn.close();
+59:         }
+60:     } catch (SQLException e) {
+61:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/insert.jsp]의 [40] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+37:     ***********************************************/
+38: 
+39:     String str_sql = "INSERT INTO bbs(name, password, email, homepage, subject, memo, ip, count, writetime) VALUES(?,?,?,?,?,?,?,?,UNIX_TIMESTAMP(CURRENT_TIMESTAMP))";
+40:     pstmt = conn.prepareStatement(str_sql);
+41:     pstmt.setString(1, s_name);
+42:     pstmt.setString(2, s_password);
+43:     pstmt.setString(3, s_email);
+
+
+JSP 파일 [/insert.jsp]의 [57] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+54:         if (pstmt != null) {
+55:             pstmt.close();
+56:         }
+57:         if (conn != null) {
+58:             conn.close();
+59:         }
+60:     } catch (SQLException e) {
+
+
+JSP 파일 [/insert.jsp]의 [58] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+55:             pstmt.close();
+56:         }
+57:         if (conn != null) {
+58:             conn.close();
+59:         }
+60:     } catch (SQLException e) {
+61:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Dec-2023 23:55:22.746 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [9] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+6: 
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [10] 행에서 오류가 발생했습니다.
+s_number cannot be resolved to a variable
+7: try {
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [11] 행에서 오류가 발생했습니다.
+s_subject cannot be resolved to a variable
+8:     String str_sql = "select number,subject,name,writetime,count from bbs;";
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [12] 행에서 오류가 발생했습니다.
+s_name cannot be resolved to a variable
+9:     stmt = conn.createStatement(str_sql);
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [13] 행에서 오류가 발생했습니다.
+s_writetime cannot be resolved to a variable
+10:     stmt.setString(number, s_number);
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [14] 행에서 오류가 발생했습니다.
+s_count cannot be resolved to a variable
+11:     stmt.setString(subject, s_subject);
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+
+
+JSP 파일 [/list.jsp]의 [15] 행에서 오류가 발생했습니다.
+The method executeUpdate(String) in the type Statement is not applicable for the arguments ()
+12:     stmt.setString(name, s_name);
+13:     stmt.setString(writetime, s_writetime);
+14:     stmt.setString(count, s_count);
+15:         stmt.executeUpdate();
+16: } catch (Exception e) {
+17:     e.printStackTrace();
+18: } finally {
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved to a variable
+17:     e.printStackTrace();
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+
+
+JSP 파일 [/list.jsp]의 [21] 행에서 오류가 발생했습니다.
+pstmt cannot be resolved
+18: } finally {
+19:     try {
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+
+
+JSP 파일 [/list.jsp]의 [23] 행에서 오류가 발생했습니다.
+conn cannot be resolved to a variable
+20:         if (pstmt != null) {
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+
+
+JSP 파일 [/list.jsp]의 [24] 행에서 오류가 발생했습니다.
+conn cannot be resolved
+21:             pstmt.close();
+22:         }
+23:         if (conn != null) {
+24:             conn.close();
+25:         }
+26:     } catch (SQLException e) {
+27:         e.printStackTrace();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
