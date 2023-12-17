@@ -30,10 +30,17 @@ try {
 
 <html>
     <head>
-        <title> No.<%= postNum %> <%= postSubject %> </title>
+        <title> <%= postSubject %> </title>
     </head>
     <body>
-        <h2 align=center> No.<%= postNum %> <%= postSubject %> </h2>
+        <p> 제목 : <%= postSubject %> </p>
+        <p> 작성자 : <%= postName %> <small>(email : <%= postemail %>, homepage : <%= postHomepage %>)</small></p>
+        <p> 내용 : <%= postMemo %> </p>
+        <p><small> 작성일 : <%= finalFormattedDate %> </small></p>
+        <br>
+        <button align="left"><a href = 'list.jsp'>[글목록]</a></button>
+        <button align="right">[글 수정]</button>
+        <button align="right">[글 삭제]</button>
     </body>
 </html>
 
