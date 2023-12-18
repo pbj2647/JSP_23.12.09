@@ -1,0 +1,9 @@
+[2023-12-18 20:32:01] [info]  [13396] Apache Commons Daemon procrun (1.3.4.0 64-bit) started.
+[2023-12-18 20:32:01] [info]  [13396] Running Service 'Tomcat10'...
+[2023-12-18 20:32:01] [info]  [16072] Starting service...
+[2023-12-18 20:32:03] [info]  [16072] Service started in 1843 milliseconds.
+[2023-12-18 22:10:19] [info]  [13396] Service SERVICE_CONTROL_STOP signalled.
+[2023-12-18 22:10:19] [info]  [15828] Stopping service...
+[2023-12-18 22:10:20] [info]  [15828] Service stop thread completed.
+[2023-12-18 22:10:20] [info]  [13396] Run service finished.
+[2023-12-18 22:10:20] [info]  [13396] Apache Commons Daemon procrun finished.

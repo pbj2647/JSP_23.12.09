@@ -39,8 +39,8 @@ try {
         <p><small> 작성일 : <%= finalFormattedDate %> </small></p>
         <br>
         <button align="left"><a href = 'list.jsp'>[글목록]</a></button>
-        <button align="right">[글 수정]</button>
-        <button align="right">[글 삭제]</button>
+        <button align="right"><a href = 'modify_ok.jsp'>[글 수정]</a></button>
+        <button align="right"><a href = 'delete_ok.jsp'>[글 삭제]</a></button>
     </body>
 </html>
 
