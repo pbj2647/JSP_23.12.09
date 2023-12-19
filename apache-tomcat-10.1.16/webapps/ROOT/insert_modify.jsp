@@ -48,7 +48,7 @@ try {
 <html>
 <head>
     <script language="javascript">
-        alert("입력한 글을 저장하였습니다.");
+        alert("글을 수정하였습니다.");
         location.href = "list.jsp";
     </script>
 </head>

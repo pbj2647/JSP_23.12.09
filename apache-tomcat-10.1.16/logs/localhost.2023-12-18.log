@@ -3,3 +3,1651 @@
 18-Dec-2023 20:32:07.612 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@507d64aa')
 18-Dec-2023 22:10:19.679 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
 18-Dec-2023 22:10:19.679 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Dec-2023 23:00:45.307 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Dec-2023 23:00:45.307 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Dec-2023 23:00:45.308 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@80bfa9d')
+18-Dec-2023 23:02:39.463 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/view.jsp]의 [17] 행에서 오류가 발생했습니다.
+Duplicate local variable postNum
+14:     rs = stmt.executeQuery(str_sql);  
+15: 
+16:     while (rs.next()) {
+17:         int postNum = rs.getInt("number");
+18:         String postSubject = rs.getString("subject");
+19:         String postName = rs.getString("name");
+20:         String postemail = rs.getString("email");
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/view.jsp]의 [17] 행에서 오류가 발생했습니다.
+Duplicate local variable postNum
+14:     rs = stmt.executeQuery(str_sql);  
+15: 
+16:     while (rs.next()) {
+17:         int postNum = rs.getInt("number");
+18:         String postSubject = rs.getString("subject");
+19:         String postName = rs.getString("name");
+20:         String postemail = rs.getString("email");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+18-Dec-2023 23:23:10.226 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ">" to complete ReferenceType1
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+table cannot be resolved to a type
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+border cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+cellspacing cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+width cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+height cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+bordercolordark cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+white cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [28] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+
+
+JSP 파일 [/list.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+
+
+JSP 파일 [/list.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+
+
+JSP 파일 [/list.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [33] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+
+
+JSP 파일 [/list.jsp]의 [33] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+
+
+JSP 파일 [/list.jsp]의 [33] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+
+
+JSP 파일 [/list.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+
+
+JSP 파일 [/list.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+
+
+JSP 파일 [/list.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+
+
+JSP 파일 [/list.jsp]의 [37] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+
+
+JSP 파일 [/list.jsp]의 [43] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+46: 
+
+
+JSP 파일 [/list.jsp]의 [44] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+46: 
+47:                 stmt = conn.createStatement();
+
+
+JSP 파일 [/list.jsp]의 [44] 행에서 오류가 발생했습니다.
+Syntax error on token ">", ; expected
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+46: 
+47:                 stmt = conn.createStatement();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ">" to complete ReferenceType1
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+table cannot be resolved to a type
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+border cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+cellspacing cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+width cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+height cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+bordercolordark cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+white cannot be resolved to a variable
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+24: 
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+
+
+JSP 파일 [/list.jsp]의 [28] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+25: <%
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+26: 
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+
+
+JSP 파일 [/list.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+
+
+JSP 파일 [/list.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+27:         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+
+
+JSP 파일 [/list.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+28:             <tr>
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [32] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+29:                 <td width=30 bgcolor=#CCCCCC>
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [33] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+
+
+JSP 파일 [/list.jsp]의 [33] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+
+
+JSP 파일 [/list.jsp]의 [33] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+30:                     <p align=center> no </p>
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+
+
+JSP 파일 [/list.jsp]의 [34] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+31:                 </td>
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [35] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+32:                 <td width=490 bgcolor=#CCCCCC>
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+
+
+JSP 파일 [/list.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+
+
+JSP 파일 [/list.jsp]의 [36] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+33:                     <p align=center> 제목 </p>
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+
+
+JSP 파일 [/list.jsp]의 [37] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+34:                 </td>
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [38] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+35:                 <td width=60 bgcolor=#CCCCCC>
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+36:                     <p align=center> 작성자 </p>
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+37:                 </td>
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete Name
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+Syntax error on token "Invalid Character", delete this token
+38:                 <td width=80 bgcolor=#CCCCCC>
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+Syntax error on token "<", @ expected
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+Syntax error on token "=", <= expected
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+39:                     <p align=center> 작성일 </p>
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+
+
+JSP 파일 [/list.jsp]의 [43] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+40:                 </td>
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+46: 
+
+
+JSP 파일 [/list.jsp]의 [44] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+46: 
+47:                 stmt = conn.createStatement();
+
+
+JSP 파일 [/list.jsp]의 [44] 행에서 오류가 발생했습니다.
+Syntax error on token ">", ; expected
+41:                 <td width=70 bgcolor=#CCCCCC>
+42:                     <p align=center> 조회수 </p>
+43:                 </td>
+44:             </tr>
+45:             try {
+46: 
+47:                 stmt = conn.createStatement();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+18-Dec-2023 23:30:04.026 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Dec-2023 23:30:04.026 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Dec-2023 23:30:19.387 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Dec-2023 23:30:19.387 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Dec-2023 23:30:19.388 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7f5b9db')

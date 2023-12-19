@@ -21,26 +21,6 @@ String str_sql = "select number,subject,name,writetime,count from bbs;";
                 <p align=left> <a href='write.html'> [글쓰기] </a> </p>
             </td>
         </tr>
-
-<%
-
-try {
-
-    stmt = conn.createStatement();
-    rs = stmt.executeQuery(str_sql);    
-
-    while (rs.next()) {
-        int postNum = rs.getInt("number");
-        String postSubject = rs.getString("subject");
-        String postName = rs.getString("name");
-        long unixTimestamp = rs.getLong("writetime");
-        Date date = new Date(unixTimestamp * 1000);
-        SimpleDateFormat sdf = new SimpleDateFormat("yy.MM.dd");
-        String finalFormattedDate = sdf.format(date);
-        int postHit = rs.getInt("count");
-
-%>
-
         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
             <tr>
                 <td width=30 bgcolor=#CCCCCC>
@@ -59,6 +39,24 @@ try {
                     <p align=center> 조회수 </p>
                 </td>
             </tr>
+            <%
+
+            try {
+            
+                stmt = Conn.createStatement();
+                rs = stmt.executeQuery(str_sql);    
+            
+                while (rs.next()) {
+                    int postNum = rs.getInt("number");
+                    String postSubject = rs.getString("subject");
+                    String postName = rs.getString("name");
+                    long unixTimestamp = rs.getLong("writetime");
+                    Date date = new Date(unixTimestamp * 1000);
+                    SimpleDateFormat sdf = new SimpleDateFormat("yy.MM.dd");
+                    String finalFormattedDate = sdf.format(date);
+                    int postHit = rs.getInt("count");
+            
+            %>
         <tr>
             <td width=30>
                 <p align="center"><%= postNum %></p>
@@ -75,12 +73,8 @@ try {
             <td width=70>
                 <p align="center"><%= postHit %></p>
             </td>
-        </tr>
-       </table>
-    </body>
-</html>
-
-<%
+            </tr>
+            <%
     }
 } catch (SQLException e) {
     e.printStackTrace();
@@ -93,3 +87,8 @@ try {
     }
 }
 %>
+       </table>
+    </body>
+</html>
+
+
