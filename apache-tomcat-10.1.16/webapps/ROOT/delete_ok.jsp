@@ -10,13 +10,27 @@ Connection conn = (Connection) pageContext.getAttribute("Conn");
 String inputUsername = request.getParameter("username");
 String inputPassword = request.getParameter("password");
 
+boolean isUserValid = false;
+
 try {
-    String str_sql = "SELECT * FROM users WHERE username=' + inputUsername' AND password=' + inputPassword'";
+    String str_sql = "select * from bbs where username = ? and password = ?";
     stmt = conn.createStatement();
     rs = stmt.executeQuery(str_sql);
-
+%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 삭제</title>
+</head>
+<body>
+<%
     if (rs.next()) {
-        String deleteSql = "DELETE FROM bbs WHERE number = " + postNum;
+        isUserValid = true;
+    }
+
+    if (isUserValid) {
+        String deleteSql = "delete from bbs where number =" + postNum;
         stmt.executeUpdate(deleteSql);
 %>
         <script language="javascript">
@@ -28,7 +42,7 @@ try {
 %>
         <script language="javascript">
             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
-            location.href = "delete.jsp?number=<%= postNum %>";
+            history.back();
         </script>
 <%
     }

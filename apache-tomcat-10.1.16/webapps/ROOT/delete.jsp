@@ -13,8 +13,8 @@ String postNum = request.getParameter("number");
     <title>게시글 삭제</title>
 </head>
 <body>
-    <form method="post" action="delete_ok.jsp">
-        이름 : <input type="text" name="name" size=20 maxlength=20> <br>
+    <form method="post" action="delete_ok.jsp?number=<%= postNum %>">
+        이름 : <input type="text" name="username" size=20 maxlength=20> <br>
         비밀번호 : <input type="password" name="password" size=20 maxlength=20> <br>
         <input type="hidden" name="number" value="<%= postNum %>">
         <input type="submit" value="삭제">
