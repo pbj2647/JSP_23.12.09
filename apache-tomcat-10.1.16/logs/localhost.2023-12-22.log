@@ -1,0 +1,1874 @@
+22-Dec-2023 00:16:34.906 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Dec-2023 00:16:34.907 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Dec-2023 00:16:34.908 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7b676112')
+22-Dec-2023 02:30:15.956 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [29] 행에서 오류가 발생했습니다.
+The operator == is undefined for the argument type(s) boolean, int
+26: <body>
+27: <%
+28: 
+29:     if (rs.next()==1) {
+30:         String deleteSql = "delete from bbs where number =" + postNum;
+31:         stmt.executeUpdate(deleteSql);
+32: %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [29] 행에서 오류가 발생했습니다.
+The operator == is undefined for the argument type(s) boolean, int
+26: <body>
+27: <%
+28: 
+29:     if (rs.next()==1) {
+30:         String deleteSql = "delete from bbs where number =" + postNum;
+31:         stmt.executeUpdate(deleteSql);
+32: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 09:07:01.649 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Dec-2023 09:07:01.649 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Dec-2023 20:36:27.187 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Dec-2023 20:36:27.188 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Dec-2023 20:36:27.190 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@60b34931')
+22-Dec-2023 20:37:16.520 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+username cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+password cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+25: <%
+26: 
+27:     if (rs.next()) {
+28:         String deleteSql = "delete from bbs where number =" + postNum;
+29:         stmt.executeUpdate(deleteSql);
+30: %>
+31:         <script language="javascript">
+
+
+JSP 파일 [/delete_ok.jsp]의 [40] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+37: %>
+38:         <script language="javascript">
+39:             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
+40:             response.sendRedirect("delete.jsp?number=<%= postNum %>");
+41:         </script>
+42: <%
+43:     }
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+username cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+password cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+25: <%
+26: 
+27:     if (rs.next()) {
+28:         String deleteSql = "delete from bbs where number =" + postNum;
+29:         stmt.executeUpdate(deleteSql);
+30: %>
+31:         <script language="javascript">
+
+
+JSP 파일 [/delete_ok.jsp]의 [40] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+37: %>
+38:         <script language="javascript">
+39:             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
+40:             response.sendRedirect("delete.jsp?number=<%= postNum %>");
+41:         </script>
+42: <%
+43:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 20:53:54.764 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+username cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+password cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+25: <%
+26: 
+27:     if (rs.next()) {
+28:         String deleteSql = "delete from bbs where number =" + postNum;
+29:         stmt.executeUpdate(deleteSql);
+30: %>
+31:         <script language="javascript">
+
+
+JSP 파일 [/delete_ok.jsp]의 [40] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+37: %>
+38:         <script language="javascript">
+39:             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
+40:             response.sendRedirect("delete.jsp?number=<%= postNum %>");
+41:         </script>
+42: <%
+43:     }
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+username cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+password cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+25: <%
+26: 
+27:     if (rs.next()) {
+28:         String deleteSql = "delete from bbs where number =" + postNum;
+29:         stmt.executeUpdate(deleteSql);
+30: %>
+31:         <script language="javascript">
+
+
+JSP 파일 [/delete_ok.jsp]의 [40] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+37: %>
+38:         <script language="javascript">
+39:             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
+40:             response.sendRedirect("delete.jsp?number=<%= postNum %>");
+41:         </script>
+42: <%
+43:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:36:48.379 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+username cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+password cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+25: <%
+26: 
+27:     if (rs.next()) {
+28:         String deleteSql = "delete from bbs where number =" + postNum;
+29:         stmt.executeUpdate(deleteSql);
+30: %>
+31:         <script language="javascript">
+
+
+JSP 파일 [/delete_ok.jsp]의 [40] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+37: %>
+38:         <script language="javascript">
+39:             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
+40:             response.sendRedirect("delete.jsp?number=<%= postNum %>");
+41:         </script>
+42: <%
+43:     }
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+username cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [14] 행에서 오류가 발생했습니다.
+password cannot be resolved to a variable
+11: //String inputPassword = request.getParameter("password");
+12: 
+13: try {
+14:     String str_sql = "select * from bbs where username = " + username + " and password = " + password + "";
+15:     stmt = conn.createStatement();
+16:     rs = stmt.executeQuery(str_sql);
+17: %>
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+25: <%
+26: 
+27:     if (rs.next()) {
+28:         String deleteSql = "delete from bbs where number =" + postNum;
+29:         stmt.executeUpdate(deleteSql);
+30: %>
+31:         <script language="javascript">
+
+
+JSP 파일 [/delete_ok.jsp]의 [40] 행에서 오류가 발생했습니다.
+postNum cannot be resolved to a variable
+37: %>
+38:         <script language="javascript">
+39:             alert("이름 또는 비밀번호를 잘못 입력했습니다.");
+40:             response.sendRedirect("delete.jsp?number=<%= postNum %>");
+41:         </script>
+42: <%
+43:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:50:53.880 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [15] 행에서 오류가 발생했습니다.
+str_sql cannot be resolved to a variable
+12: try {
+13:     String query = "select name, password from bbs where number=?";
+14:     stmt = conn.createStatement();
+15:     rs = stmt.executeQuery(str_sql);
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+
+
+JSP 파일 [/delete_ok.jsp]의 [17] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+14:     stmt = conn.createStatement();
+15:     rs = stmt.executeQuery(str_sql);
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+
+
+JSP 파일 [/delete_ok.jsp]의 [18] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+15:     rs = stmt.executeQuery(str_sql);
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+
+
+JSP 파일 [/delete_ok.jsp]의 [19] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [15] 행에서 오류가 발생했습니다.
+str_sql cannot be resolved to a variable
+12: try {
+13:     String query = "select name, password from bbs where number=?";
+14:     stmt = conn.createStatement();
+15:     rs = stmt.executeQuery(str_sql);
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+
+
+JSP 파일 [/delete_ok.jsp]의 [17] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+14:     stmt = conn.createStatement();
+15:     rs = stmt.executeQuery(str_sql);
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+
+
+JSP 파일 [/delete_ok.jsp]의 [18] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+15:     rs = stmt.executeQuery(str_sql);
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+
+
+JSP 파일 [/delete_ok.jsp]의 [19] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+16:     
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:51:53.526 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [17] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+14:     stmt = conn.createStatement();
+15:     rs = stmt.executeQuery(str_sql);
+16: 
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+
+
+JSP 파일 [/delete_ok.jsp]의 [18] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+15:     rs = stmt.executeQuery(str_sql);
+16: 
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+
+
+JSP 파일 [/delete_ok.jsp]의 [19] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+16: 
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [17] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+14:     stmt = conn.createStatement();
+15:     rs = stmt.executeQuery(str_sql);
+16: 
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+
+
+JSP 파일 [/delete_ok.jsp]의 [18] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+15:     rs = stmt.executeQuery(str_sql);
+16: 
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+
+
+JSP 파일 [/delete_ok.jsp]의 [19] 행에서 오류가 발생했습니다.
+resultSet cannot be resolved
+16: 
+17:     if (resultSet.next()) {
+18:         String storedName = resultSet.getString("name");
+19:         String storedPassword = resultSet.getString("password");
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:52:17.581 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:52:41.195 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=?";
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=?";
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=?";
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=?";
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             query = "DELETE FROM bbs WHERE number=?";
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             query = "DELETE FROM bbs WHERE number=?";
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:53:09.129 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+Query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             Query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             Query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             Query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [23] 행에서 오류가 발생했습니다.
+Query cannot be resolved to a variable
+20: 
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             Query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [24] 행에서 오류가 발생했습니다.
+query cannot be resolved to a variable
+21:         if (name.equals(storedName) && password.equals(storedPassword)) {
+22:             // 이름과 비밀번호 일치하면 글 삭제
+23:             Query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+
+
+JSP 파일 [/delete_ok.jsp]의 [26] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+23:             Query = "DELETE FROM bbs WHERE number=" + postNum;
+24:             int rowsAffected = stmt.executeUpdate(query);
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+
+
+JSP 파일 [/delete_ok.jsp]의 [28] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+25:             if (rowsAffected > 0) {
+26:                 alertMessage = "글을 삭제했습니다.";
+27:             } else {
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [31] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+28:                 alertMessage = "글 삭제에 실패했습니다.";
+29:             }
+30:         } else {
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+31:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+32:         }
+33:     } else {
+34:         alertMessage = "글 삭제에 실패했습니다.";
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+35:     }
+36: } catch (SQLException e) {
+37:     e.printStackTrace();
+38:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+39: }
+40: 
+41: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+JSP 파일 [/delete_ok.jsp]의 [49] 행에서 오류가 발생했습니다.
+alertMessage cannot be resolved to a variable
+46:     <meta charset="UTF-8">
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+
+
+JSP 파일 [/delete_ok.jsp]의 [50] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+47:     <title>글 삭제 결과</title>
+48:     <script>
+49:         alert("<%= alertMessage %>");
+50:         location.href = "<%= redirectURL %>";
+51:     </script>
+52: </head>
+53: <body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 21:56:42.449 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [30] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+27:                 alertMessage = "글을 삭제했습니다.";
+28:             } else {
+29:                 alertMessage = "글 삭제에 실패했습니다.";
+30:                 redirectURL = "delete.jsp?number=" + postNum;
+31:             }
+32:         } else {
+33:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+31:             }
+32:         } else {
+33:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+34:             redirectURL = "delete.jsp?number=" + postNum;
+35:         }
+36:     } else {
+37:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+35:         }
+36:     } else {
+37:         alertMessage = "글 삭제에 실패했습니다.";
+38:         redirectURL = "delete.jsp?number=" + postNum;
+39:     }
+40: } catch (SQLException e) {
+41:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [43] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+40: } catch (SQLException e) {
+41:     e.printStackTrace();
+42:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+43:     redirectURL = "delete.jsp?number=" + postNum;
+44: }
+45: 
+46: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/delete_ok.jsp]의 [30] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+27:                 alertMessage = "글을 삭제했습니다.";
+28:             } else {
+29:                 alertMessage = "글 삭제에 실패했습니다.";
+30:                 redirectURL = "delete.jsp?number=" + postNum;
+31:             }
+32:         } else {
+33:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [34] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+31:             }
+32:         } else {
+33:             alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+34:             redirectURL = "delete.jsp?number=" + postNum;
+35:         }
+36:     } else {
+37:         alertMessage = "글 삭제에 실패했습니다.";
+
+
+JSP 파일 [/delete_ok.jsp]의 [38] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+35:         }
+36:     } else {
+37:         alertMessage = "글 삭제에 실패했습니다.";
+38:         redirectURL = "delete.jsp?number=" + postNum;
+39:     }
+40: } catch (SQLException e) {
+41:     e.printStackTrace();
+
+
+JSP 파일 [/delete_ok.jsp]의 [43] 행에서 오류가 발생했습니다.
+redirectURL cannot be resolved to a variable
+40: } catch (SQLException e) {
+41:     e.printStackTrace();
+42:     alertMessage = "글 삭제 중 오류가 발생했습니다.";
+43:     redirectURL = "delete.jsp?number=" + postNum;
+44: }
+45: 
+46: // JavaScript를 사용하여 알림창 띄우고 페이지 이동
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Dec-2023 23:15:13.991 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Dec-2023 23:15:13.991 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
