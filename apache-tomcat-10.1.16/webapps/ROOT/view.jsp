@@ -39,7 +39,7 @@ try {
         <p><small> 작성일 : <%= finalFormattedDate %> </small></p>
         <br>
         <button align="left"><a href = 'list.jsp'>[글목록]</a></button>
-        <button align="right"><a href = 'modify.html?number=<%= postNum %>'>[글 수정]</a></button>
+        <button align="right"><a href = 'modify.jsp?number=<%= postNum %>'>[글 수정]</a></button>
         <button align="right"><a href = 'delete.jsp?number=<%= postNum %>'>[글 삭제]</a></button>
     </body>
 </html>

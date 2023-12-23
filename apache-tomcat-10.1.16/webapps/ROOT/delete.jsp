@@ -1,26 +1,26 @@
-<%@ page language="java" import="java.sql.*,java.io.*, java.text.SimpleDateFormat, java.util.Date" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*,java.text.*"%>
+<%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="conn_db.jsp" %>
-
 <%
 String postNum = request.getParameter("number");
-%>
+Connection conn = (Connection)pageContext.getAttribute("Conn");
+String str_sql = "DELETE FROM bbs WHERE number=" + postNum + ";";
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>글 삭제</title>
-</head>
-<body>
-    <form action="delete_ok.jsp" method="post">
-        <input type="hidden" name="number" value="<%= postNum %>">
-        <label for="name">이름:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="password">비밀번호:</label>
-        <input type="password" id="password" name="password" required><br>
-        <input type="submit" value="삭제">
-        <button><a href="view.jsp?number=<%= postNum %>">취소</a></button>
-    </form>    
-</body>
-</html>
+try {
+    Statement stmt = conn.createStatement();
+    int rowsAffected = stmt.executeUpdate(str_sql);
+
+    if (rowsAffected > 0) {
+        response.sendRedirect("list.jsp");
+    } else {
+        out.println("게시글 삭제에 실패했습니다.");
+    }
+} catch (SQLException e) {
+    e.printStackTrace();
+} finally {
+    try {
+        if (conn != null) conn.close();
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+%>
