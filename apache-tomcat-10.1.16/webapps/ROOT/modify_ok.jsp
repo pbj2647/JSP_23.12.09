@@ -21,27 +21,21 @@ try {
         String storedPassword = rs.getString("password");
 
         if (name.equals(storedName) && password.equals(storedPassword)) {
-            // 이름과 비밀번호 일치하면 글 삭제
-            query = "DELETE FROM bbs WHERE number=" + postNum;
-            int rowsAffected = stmt.executeUpdate(query);
-            if (rowsAffected > 0) {
-                alertMessage = "글을 삭제했습니다.";
+            // 이름과 비밀번호 일치하면 글 수정 페이지로 이동
+                alertMessage = "인증에 성공하였습니다.";
+                redirectURL = "modify.jsp?number=" + postNum;
             } else {
-                alertMessage = "글 삭제에 실패했습니다.";
-                redirectURL = "delete_check.jsp?number=" + postNum;
+                alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
+                redirectURL = "modify_check.jsp?number=" + postNum;
             }
-        } else {
-            alertMessage = "이름 또는 비밀번호를 잘못 입력했습니다.";
-            redirectURL = "delete_check.jsp?number=" + postNum;
-        }
-    } else {
-        alertMessage = "글 삭제에 실패했습니다.";
-        redirectURL = "delete_check.jsp?number=" + postNum;
+    }   else {
+        alertMessage = "인증에 실패했습니다.";
+        redirectURL = "modify_check.jsp?number=" + postNum;
     }
 } catch (SQLException e) {
     e.printStackTrace();
-    alertMessage = "글 삭제 중 오류가 발생했습니다.";
-    redirectURL = "delete_check.jsp?number=" + postNum;
+    alertMessage = "정보 인증 중 오류가 발생했습니다.";
+    redirectURL = "modify_check.jsp?number=" + postNum;
 }
 
 // JavaScript를 사용하여 알림창 띄우고 페이지 이동

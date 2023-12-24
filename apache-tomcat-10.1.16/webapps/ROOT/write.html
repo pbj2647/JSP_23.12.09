@@ -10,7 +10,7 @@
                     return;
 
                 } else if(document.myForm.password.value == ""){
-                    alert('비밀번호를 입력해야 글을 수정하거나 삭제할 수 있습니다.');
+                    alert('비밀번호를 입력하세요.');
                     document.myForm.password.focus();
                     return;
 
@@ -45,6 +45,8 @@
 
 <br>
 <input type="submit" value="글쓰기" onclick="javascript:check_submit();">
+<button align="left"><a href = 'list.jsp'>취소</a></button>
+
 
 </form>
 

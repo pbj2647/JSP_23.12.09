@@ -1,66 +1,62 @@
-<%@ page language="java" import="java.sql.*,java.io.*" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" import="java.sql.*,java.io.*, java.text.SimpleDateFormat, java.util.Date" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.util.*,java.text.*"%>
 <%@ include file="conn_db.jsp" %>
 
 <%
 String postNum = request.getParameter("number");
 // conn_db.jsp에서 생성한 Connection 객체를 가져옴
-Connection conn = (Connection) pageContext.getAttribute("Conn");
-String str_sql = "select subject,name,password,email,homepage,memo from bbs where number=" + postNum + ";";
+Connection conn = (Connection)pageContext.getAttribute("Conn");
+String str_sql = "select subject,name,email,homepage,memo,writetime,count from bbs where number="+postNum+";";
 
 try {
-    Statement stmt = conn.createStatement();
-    ResultSet rs = stmt.executeQuery(str_sql);
 
-    if (rs.next()) {
+    stmt = conn.createStatement();
+    rs = stmt.executeQuery(str_sql);  
+
+    while (rs.next()) {
         String postSubject = rs.getString("subject");
-        String postName = rs.getString("name");
-        String postPassword = rs.getString("password");
-        String postEmail = rs.getString("email");
-        String postHomepage = rs.getString("homepage");
         String postMemo = rs.getString("memo");
-
 %>
+
+
 <html>
-<head>
-    <title>글 수정</title>
-</head>
-<body>
-    <h2>글 수정</h2>
-    <form action="insert_modify.jsp" method="post">
-        <input type="hidden" name="number" value="<%= postNum %>">
-        <table>
-            <tr>
-                <td>제목:</td>
-                <td><input type="text" name="subject" value="<%= postSubject %>" required></td>
-            </tr>
-            <tr>
-                <td>작성자:</td>
-                <td><input type="text" name="name" value="<%= postName %>" required></td>
-            </tr>
-            <tr>
-                <td>비밀번호:</td>
-                <td><input type="password" name="password" required></td>
-            </tr>
-            <tr>
-                <td>전자우편:</td>
-                <td><input type="text" name="email" value="<%= postEmail %>"></td>
-            </tr>
-            <tr>
-                <td>홈페이지:</td>
-                <td><input type="text" name="homepage" value="<%= postHomepage %>"></td>
-            </tr>
-            <tr>
-                <td>내용:</td>
-                <td><textarea name="memo" rows="5" cols="50" required><%= postMemo %></textarea></td>
-            </tr>
-        </table>
+    <head>
+        <meta charset="UTF-8">
+        <title> 글쓰기</title>
+        <script language="javascript">
+            function check_submit() {
+                 if(document.myForm.subject.value == ""){
+                    alert('제목을 공백으로 수정할 수 없습니다.');
+                    document.myForm.subject.focus();
+                    return;
+
+                }else if(document.myForm.memo.value == ""){
+                    alert('내용을 공백으로 수정할 수 없습니다.');
+                    document.myForm.memo.focus();
+                    return;
+
+                }else {
+                    document.myForm.action="insert_modify.jsp";
+                    document.myForm.submit();
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+    <h2> 글수정 </h2>
+    <form name="myForm" method="post" action="insert_modify.jsp" accept-charset="UTF-8">
+        제목 : <input type="text" name="subject" size="50" maxlength="70" value="<%= postSubject %>"> <br>
+        내용 : <textarea name="memo" cols="50" rows="20" maxlength="500"><%= postMemo %></textarea><br>
+        
         <br>
-        <input type="submit" value="수정">
+        <input type="hidden" name="number" value="<%= postNum %>">
+        <input type="submit" value="수정하기" onclick="javascript:check_submit();">
+        <button><a href="view.jsp?number=<%= postNum %>">취소</a></button>
     </form>
-    <br>
-    <button><a href='view.jsp?number=<%= postNum %>'>취소</a></button>
 </body>
 </html>
+
 <%
     }
 } catch (SQLException e) {

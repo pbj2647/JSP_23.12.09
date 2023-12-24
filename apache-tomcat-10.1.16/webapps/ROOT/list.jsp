@@ -6,8 +6,16 @@
 
 // conn_db.jsp에서 생성한 Connection 객체를 가져옴
 Connection conn = (Connection)pageContext.getAttribute("Conn");
-String str_sql = "select number,subject,name,writetime,count from bbs;";
+String query = request.getParameter("query");
+if (query == null) {
+    query = "";
+}
 
+String str_sql = "select number, subject, name, writetime, count from bbs";
+if (!query.isEmpty()) {
+    str_sql += " where subject like '%" + query + "%'";
+}
+str_sql += ";";
 %>
 
 <html>
@@ -15,12 +23,16 @@ String str_sql = "select number,subject,name,writetime,count from bbs;";
         <title> 글목록 </title>
     </head>
     <body>
-        <h2 align=center> 게시글 목록 </h2>
+        <h2 align=left> 게시글 목록 </h2>
         <tr>
             <td width=100% colspan=5>
                 <p align=left> <a href='write.html'> [글쓰기] </a> </p>
             </td>
         </tr>
+        <form action="list.jsp" method="get">
+            <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+            <input type="submit" value="검색">
+        </form>
         <table border=1 cellspacing=0 width=730 height=60 bordercolordark=white bodercolorlight=#999999>
             <tr>
                 <td width=30 bgcolor=#CCCCCC>
@@ -62,7 +74,9 @@ String str_sql = "select number,subject,name,writetime,count from bbs;";
                 <p align="center"><%= postNum %></p>
             </td>
             <td width=490>
-                <p align="center"><a href='view.jsp?number=<%= postNum %>'><%= postSubject %></a></p>
+                <p align="center">
+                    <a href='increaseHit.jsp?number=<%= postNum %>&count=<%= postHit %>'><%= postSubject %></a>
+                </p>
             </td>
             <td width=60>
                 <p align="center"><%= postName %></p>
