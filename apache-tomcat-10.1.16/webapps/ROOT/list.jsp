@@ -11,10 +11,24 @@ if (query == null) {
     query = "";
 }
 
-String str_sql = "select number, subject, name, writetime, count from bbs";
-if (!query.isEmpty()) {
-    str_sql += " where subject like '%" + query + "%'";
+String keyword = request.getParameter("keyword");
+if (keyword == null) {
+    keyword = "1"; // 기본값 설정
 }
+
+String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+if (!query.isEmpty()) {
+    if (keyword.equals("1")) {
+        str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+    } else if (keyword.equals("2")) {
+        str_sql += " where subject like '%" + query + "%'";
+    } else if (keyword.equals("3")) {
+        str_sql += " where memo like '%" + query + "%'";
+    } else if (keyword.equals("4")) {
+        str_sql += " where name like '%" + query + "%'";
+    }
+}
+
 str_sql += ";";
 %>
 
@@ -23,13 +37,15 @@ str_sql += ";";
         <title> 글목록 </title>
     </head>
     <body>
-        <h2 align=left> 게시글 목록 </h2>
-        <tr>
-            <td width=100% colspan=5>
-                <p align=left> <a href='write.html'> [글쓰기] </a> </p>
-            </td>
-        </tr>
+        <h2 align=left> <a href="list.jsp"> 게시글 목록 </a></h2>
+        <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
         <form action="list.jsp" method="get">
+            <select class="form-select" aria-label="keyword" name="keyword">
+                <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+                <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+                <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+                <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+            </select>
             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
             <input type="submit" value="검색">
         </form>
@@ -92,17 +108,8 @@ str_sql += ";";
     }
 } catch (SQLException e) {
     e.printStackTrace();
-} finally {
-    try {
-        if (rs != null) rs.close();
-        if (stmt != null) stmt.close();
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-}
+} 
 %>
        </table>
     </body>
 </html>
-
-

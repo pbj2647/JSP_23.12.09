@@ -21,6 +21,6 @@ String postNum = request.getParameter("number");
         <input type="password" id="password" name="password" required><br>
         <input type="submit" value="수정">
         <button><a href="view.jsp?number=<%= postNum %>">취소</a></button>
-    </form>    
+    </form>  
 </body>
 </html>

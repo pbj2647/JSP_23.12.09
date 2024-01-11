@@ -1,0 +1,2332 @@
+11-Jan-2024 22:20:07.690 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jan-2024 22:20:07.690 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jan-2024 22:20:07.693 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@71c17a57')
+11-Jan-2024 22:20:09.009 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [73]에서 [list.jsp]을(를) 처리하는 중 예외 발생
+
+70: 
+71:             try {
+72:             
+73:                 stmt = Conn.createStatement();
+74:                 rs = stmt.executeQuery(str_sql);    
+75:             
+76:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:20:09.206 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [73]에서 [list.jsp]을(를) 처리하는 중 예외 발생
+
+70: 
+71:             try {
+72:             
+73:                 stmt = Conn.createStatement();
+74:                 rs = stmt.executeQuery(str_sql);    
+75:             
+76:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:21:00.600 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [73]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+70: 
+71:             try {
+72:             
+73:                 stmt = Conn.createStatement();
+74:                 rs = stmt.executeQuery(str_sql);    
+75:             
+76:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:24:07.587 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:24:42.084 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jan-2024 22:24:42.085 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jan-2024 22:24:42.086 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@507d64aa')
+11-Jan-2024 22:24:46.024 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:24:46.025 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:24:53.328 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:51.168 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:51.799 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:52.059 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:52.778 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:53.296 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:53.715 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:53.942 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:54.162 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:54.388 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:54.620 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:54.856 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:55.229 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:55.311 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:55.873 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:57.056 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:57.740 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:58.304 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:58.806 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:26:59.636 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/list.jsp]의 [16] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+13: 
+14: String str_sql = "select number, subject, memo, name, writetime, count from bbs";
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [18] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+15: if (!query.isEmpty()) {
+16:     if (keyword.equals("1")) {
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [20] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+17:         str_sql += " where subject like '%" + query + "%' or memo like '%" + query + "%' or name like '%" + query + "%'";    
+18:     } else if (keyword.equals("2")) {
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+
+
+JSP 파일 [/list.jsp]의 [22] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+19:         str_sql += " where subject like '%" + query + "%'";
+20:     } else if (keyword.equals("3")) {
+21:         str_sql += " where memo like '%" + query + "%'";
+22:     } else if (keyword.equals("4")) {
+23:         str_sql += " where name like '%" + query + "%'";
+24:     }
+25: }
+
+
+JSP 파일 [/list.jsp]의 [39] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+36:         <p align=left> <a href='write.html'> [글쓰기] </a> </p>  
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+
+
+JSP 파일 [/list.jsp]의 [40] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+37:         <form action="list.jsp" method="get">
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+
+
+JSP 파일 [/list.jsp]의 [41] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+38:             <select class="form-select" aria-label="keyword" name="keyword">
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+
+
+JSP 파일 [/list.jsp]의 [42] 행에서 오류가 발생했습니다.
+keyword cannot be resolved
+39:                 <option value="1" <% if (keyword.equals("1")) { %>selected<% } %>>전체</option>
+40:                 <option value="2" <% if (keyword.equals("2")) { %>selected<% } %>>제목</option>
+41:                 <option value="3" <% if (keyword.equals("3")) { %>selected<% } %>>내용</option>
+42:                 <option value="4" <% if (keyword.equals("4")) { %>selected<% } %>>작성자</option>
+43:             </select>
+44:             <input type="text" name="query" width=500 placeholder="검색어를 입력하세요" value="<%= query %>">
+45:             <input type="submit" value="검색">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:29:51.614 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = Conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:30:10.379 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = Conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:30:11.699 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = Conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:30:13.156 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = Conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:30:16.470 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+11-Jan-2024 22:30:16.470 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+11-Jan-2024 22:30:27.409 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jan-2024 22:30:27.409 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jan-2024 22:30:27.410 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@52ff99cd')
+11-Jan-2024 22:30:29.201 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = Conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:30:30.277 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = Conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "Conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:31:03.366 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:31:04.041 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [74]에서 [/list.jsp]을(를) 처리하는 중 예외 발생
+
+71: 
+72:             try {
+73:             
+74:                 stmt = conn.createStatement();
+75:                 rs = stmt.executeQuery(str_sql);    
+76:             
+77:                 while (rs.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
+		at org.apache.jsp.list_jsp._jspService(list_jsp.java:258)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+11-Jan-2024 22:32:32.377 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+11-Jan-2024 22:32:32.377 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+11-Jan-2024 22:32:49.089 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jan-2024 22:32:49.089 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jan-2024 22:32:49.090 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@53c6f96d')
+11-Jan-2024 22:40:13.430 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jan-2024 22:40:13.430 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jan-2024 22:40:13.431 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1e0a864d')
